@@ -1,0 +1,12 @@
+📸 INSTRUÇÕES SIMPLES:
+
+1. Salve sua foto como: jorge-photo.jpg
+2. Coloque nesta pasta: public/img/
+3. Substitua este arquivo
+
+Tamanho recomendado: 200x200 pixels (quadrada)
+Formato: JPG ou PNG
+
+Depois que colocar a foto, ela aparecerá automaticamente no site!
+
+Caminho completo: portfolio-jorge/public/img/jorge-photo.jpg
