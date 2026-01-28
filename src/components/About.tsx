@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { fadeInUp, staggerContainer } from '../animations/variants'
+import { staggerContainer } from '../animations/variants'
 import CountUpCard from './CountUpCard'
 
 const About = () => {

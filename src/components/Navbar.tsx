@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Menu, X } from 'lucide-react'
 import { useState } from 'react'
-import Avatar from './Avatar'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)

@@ -4,7 +4,7 @@
  */
 
 import React from 'react'
-import { spacing, spacingClasses, sectionSpacingVariants, cardSpacingVariants, gridGapVariants } from '../config/spacing'
+import { spacing } from '../config/spacing'
 import { getSpacingClass, getResponsiveGap } from '../utils/spacing'
 
 const SpacingTest: React.FC = () => {
@@ -19,7 +19,7 @@ const SpacingTest: React.FC = () => {
           {Object.entries(spacing).map(([key, value]) => (
             <div key={key} className="flex items-center gap-4">
               <span className="w-20 text-sm">{key}:</span>
-              <span className="text-purple-400">{value}</span>
+              <span className="text-purple-400">{String(value)}</span>
             </div>
           ))}
         </div>
@@ -29,12 +29,14 @@ const SpacingTest: React.FC = () => {
       <div className="mb-8">
         <h3 className="text-lg font-semibold mb-2">Section Spacing Variants:</h3>
         <div className="space-y-2">
-          {Object.entries(sectionSpacingVariants).map(([key, value]) => (
-            <div key={key} className="flex items-center gap-4">
-              <span className="w-20 text-sm">{key}:</span>
-              <span className="text-blue-400">{value}</span>
-            </div>
-          ))}
+          <div className="flex items-center gap-4">
+            <span className="w-20 text-sm">normal:</span>
+            <span className="text-blue-400">py-16 md:py-20</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <span className="w-20 text-sm">large:</span>
+            <span className="text-blue-400">py-20 md:py-24</span>
+          </div>
         </div>
       </div>
 
@@ -42,12 +44,14 @@ const SpacingTest: React.FC = () => {
       <div className="mb-8">
         <h3 className="text-lg font-semibold mb-2">Card Spacing Variants:</h3>
         <div className="space-y-2">
-          {Object.entries(cardSpacingVariants).map(([key, value]) => (
-            <div key={key} className="flex items-center gap-4">
-              <span className="w-20 text-sm">{key}:</span>
-              <span className="text-green-400">{value}</span>
-            </div>
-          ))}
+          <div className="flex items-center gap-4">
+            <span className="w-20 text-sm">normal:</span>
+            <span className="text-green-400">p-6</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <span className="w-20 text-sm">large:</span>
+            <span className="text-green-400">p-8</span>
+          </div>
         </div>
       </div>
 
@@ -55,12 +59,14 @@ const SpacingTest: React.FC = () => {
       <div className="mb-8">
         <h3 className="text-lg font-semibold mb-2">Grid Gap Variants:</h3>
         <div className="space-y-2">
-          {Object.entries(gridGapVariants).map(([key, value]) => (
-            <div key={key} className="flex items-center gap-4">
-              <span className="w-20 text-sm">{key}:</span>
-              <span className="text-yellow-400">{value}</span>
-            </div>
-          ))}
+          <div className="flex items-center gap-4">
+            <span className="w-20 text-sm">small:</span>
+            <span className="text-yellow-400">gap-4</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <span className="w-20 text-sm">medium:</span>
+            <span className="text-yellow-400">gap-6</span>
+          </div>
         </div>
       </div>
 

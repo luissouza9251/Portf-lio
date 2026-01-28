@@ -30,7 +30,7 @@ describe('SectionContainer', () => {
     })
 
     it('renders with no children', () => {
-      const { container } = render(<SectionContainer />)
+      const { container } = render(<SectionContainer><div></div></SectionContainer>)
       
       const section = container.firstChild as HTMLElement
       expect(section).toBeInTheDocument()
